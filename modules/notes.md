@@ -28,7 +28,7 @@ way.
 Linear regression analysis focuses on the mean of Y given a particular value of X:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7fa78248-da75-4ac0-a44a-186b70b3d7dc" />
+  <img src="https://github.com/user-attachments/assets/db72cf7a-61f3-42bf-89e0-be3f1f6a03e5" />
 </p>
 
 To calculate the regression coefficients, we use the Ordinary Least Squares Estimation (OLS).
