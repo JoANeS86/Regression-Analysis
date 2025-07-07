@@ -58,7 +58,15 @@ between two variables. It always falls in the range of [-1, 1].
 
 Logistic regression: A technique that models a categorical dependent variable based on one or more independent variables.
 
+## Module 2: Simple Linear Regression
 
+To use Ordinary Least Squares estimation we use the following code in Python:
+
+        from statsmodels.formula.api import ols
+
+And we'll probably need the following too:
+
+        import statsmodels.api as sm
 
 
 
