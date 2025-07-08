@@ -68,9 +68,10 @@ And we'll probably need the following too:
 
         import statsmodels.api as sm
 
+## Module 3: Multiple Regression
 
-
-
+Multiple linear regression, also known as multiple regression, is a technique that estimates the linear relationship between one continuous dependent
+variable and two or more independent variables
 
 
 
