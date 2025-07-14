@@ -73,7 +73,9 @@ And we'll probably need the following too:
 Multiple linear regression, also known as multiple regression, is a technique that estimates the linear relationship between one continuous dependent
 variable and two or more independent variables
 
+One Hot Encoding: A data transformation technique that turns one categorical variable into several binary variables.
 
+Variance Inflation Factors (VIF): Quantifies how correlated each independent variable is with all of the other independent variables.
 
 
 
