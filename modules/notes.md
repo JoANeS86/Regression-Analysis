@@ -54,13 +54,25 @@ that measures the distance between the observed values and the models estimated 
 
 <ins>Ordinary Least Squares (OLS)</ins>: A method that minimizes the sum of squared residuals to estimate parameters in a linear regression model.
 
-When two variables are summarized together, there is another relevant statistic called r, Pearson’s correlation coefficient (named after the person
-who helped develop it), or simply the linear correlation coefficient. The correlation coefficient quantifies the strength of the linear relationship
+When two variables are summarized together, there is another relevant statistic called **r**, **Pearson’s correlation coefficient** (named after the person
+who helped develop it), or simply the **linear correlation coefficient**. The correlation coefficient quantifies the strength of the linear relationship
 between two variables. It always falls in the range of [-1, 1].
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ff562c12-09ea-46a8-b65a-56291e3d950b" />
 </p>
+
+An easier way of thinking about this calculation is: the numerator—the covariance—represents the extent to which X and Y vary together from their respective means. When this value is positive, it suggests that high values of X tend to be associated with high values of Y, indicating a positive correlation. Conversely, if the value is negative, it suggests that high values of X tend to be associated with low values of Y and vice versa, indicating a negative correlation. 
+
+The denominator—the product of the standard deviations—standardizes the units of the numerator. It adjusts for the inherent variability of the individual variables. This makes r a statistic without a unit. It is a pure number, without dimension.
+
+The slope of the regression line is:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ab6adb4f-bc2f-45e0-9e51-a86b59c066cb" />
+</p>
+
+There, the ratio SDy/SDx adjusts that relationship into the proper scale of “change in Y per change in X.
 
 Logistic regression: A technique that models a categorical dependent variable based on one or more independent variables.
 
