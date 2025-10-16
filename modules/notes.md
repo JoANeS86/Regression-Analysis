@@ -74,6 +74,14 @@ The slope of the regression line is:
 
 There, the ratio SDy/SDx adjusts that relationship into the proper scale of “change in Y per change in X.
 
+
+
+
+
+
+
+
+
 Logistic regression: A technique that models a categorical dependent variable based on one or more independent variables.
 
 To use Ordinary Least Squares estimation we use the following code in Python:
