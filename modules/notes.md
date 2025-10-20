@@ -74,7 +74,25 @@ The slope of the regression line is:
 
 There, the ratio SDy/SDx adjusts that relationship into the proper scale of “change in Y per change in X.
 
+**Simple linear regression assumptions**
 
+To recap, there are four assumptions of simple linear regression:
+
+        Linearity: Each predictor variable (Xi) is linearly related to the outcome variable (Y).
+        Normality: The errors are normally distributed.*
+        Independent Observations: Each observation in the dataset is independent.
+        Homoscedasticity: The variance of the errors is constant or similar across the model.*
+
+*Note on errors and residuals
+
+This course has rather interchangeably used the terms "errors" and "residuals" in connection with regression. You may see this in other online resources and materials throughout your time as a data professional. In actuality, there is a difference:
+
+        Residuals are the difference between the predicted and observed values. You can calculate
+        residuals after you build a regression model by subtracting the predicted values from the observed values.
+
+        Errors are the natural noise assumed to be in the model.
+
+Residuals are used to estimate errors when checking the normality and homoscedasticity assumptions of linear regression.
 
 
 
