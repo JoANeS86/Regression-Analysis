@@ -94,14 +94,6 @@ This course has rather interchangeably used the terms "errors" and "residuals" i
 
 Residuals are used to estimate errors when checking the normality and homoscedasticity assumptions of linear regression.
 
-
-
-
-
-
-
-Logistic regression: A technique that models a categorical dependent variable based on one or more independent variables.
-
 To use Ordinary Least Squares estimation we use the following code in Python:
 
         from statsmodels.formula.api import ols
@@ -109,6 +101,56 @@ To use Ordinary Least Squares estimation we use the following code in Python:
 And we'll probably need the following too:
 
         import statsmodels.api as sm
+
+**Interpret measures of uncertainty in regression**
+
+We can then quantify how uncertain the entire model is through a few measures of uncertainty:
+
+        Confidence intervals around beta coefficients
+        P-values for the beta coefficients
+        Confidence band around the regression line
+
+Summary of results (Example):
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/eba11aac-9b5f-4d12-a478-343dc7539aae" />
+</p>
+
+<ins>P-values</ins>
+
+When running regression analysis, you want to know if X is really correlated with y or not. So we do a hypothesis test on the regression results. In regression analysis, for each beta coefficient, we are testing the following set of null and alternative hypotheses:
+
+    - H0 (null hypothesis): B1 = 0
+    - H1 (alternative hypothesis): B1 != 0
+
+In our example, because the p-value is less than 0.05, we can reject the null hypothesis that B1 is equal to 0, and state that the coefficient is statistically significant, which means that a difference in bill length of a penguin is truly correlated with a difference in body mass.
+
+<ins>Confidence Intervals</ins>
+
+Each beta coefficient also has a confidence interval associated with its estimate. A 95% interval means the interval itself has a 95% chance of containing the true parameter value of the coefficient. So there is 5% chance that our confidence interval [131.788, 150.592] does not contain the true value of B1. More precisely, this means that if you were to repeat this experiment many times, 95% of the confidence intervals would contain the true value of B1.
+
+But, since there is uncertainty in both of the estimated beta coefficients, then the estimated y values also have uncertainty. This is where confidence bands become useful.
+
+<ins>Confidence band</ins>: The area surrounding the line that describes the uncertainty around the predicted outcome. You can think of the confidence band as representing the confidence interval surrounding each point estimate of y. Since there is uncertainty at every point in the line, we use the confidence band to summarize the confidence intervals across the regression model. The confidence band is always narrowest towards the mean of the sample and widest at the extremities.
+
+**Evaluation metrics for simple linear regression**
+
+<ins>R²: The coefficient of determination</ins>
+
+R² measures the proportion of variation in the dependent variable, Y, explained by the independent variable(s), X.
+
+        R² = 1 - Sum of squared residuals/Total sum of squares
+
+R² ranges from 0 to 1. So, if a model has an R² of 0.85, that means that the X variables explain about 85% of the variation in the Y variable.
+
+Adjusted R²
+
+
+
+
+Logistic regression: A technique that models a categorical dependent variable based on one or more independent variables.
+
+
 
 ## Module 3: Multiple Regression
 
