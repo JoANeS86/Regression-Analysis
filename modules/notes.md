@@ -143,7 +143,12 @@ R² measures the proportion of variation in the dependent variable, Y, explained
 
 R² ranges from 0 to 1. So, if a model has an R² of 0.85, that means that the X variables explain about 85% of the variation in the Y variable.
 
+<ins>MSE (mean squared error)</ins>: Is the average of the squared difference between the predicted and actual values.
+
+<ins>MAE (mean absolute error)</ins>: Is the average of the absolute difference between the predicted and actual values.
+
 Adjusted R²
+
 
 
 
