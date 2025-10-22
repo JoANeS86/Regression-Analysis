@@ -192,7 +192,11 @@ Generally, R-squared will continue to increase with more predictors because the 
 
 Along with the R-squared value, a multiple regression model also has an associated adjusted R-squared value. The adjusted R-squared penalizes the addition of more independent variables to the multiple regression model. Additionally, the adjusted R-squared only captures the proportion of variation explained by the independent variables that show a significant relationship with the outcome variable. These differences prevent the adjusted R-squared value from becoming inflated like the R-squared value.
 
+Variable selection methods: Forward Selection and Backward Elimination.
 
+The bias variance tradeoff balances to model qualities, bias and variance: A highly biased model may oversimplify the relationship, under fitting to the observed data and generating inaccurate estimates, and a model with high variants can over fit to the observed data and generate inaccurate estimates for unseen data.
+
+There are three common regularization techniques. Lasso regression, ridge regression and elastic net regression.
 
 
 
