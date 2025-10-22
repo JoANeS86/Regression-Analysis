@@ -174,13 +174,19 @@ Variance Inflation Factors (VIF): Quantifies how correlated each independent var
 
     - Underfitting
 
-    In the case of underfitting, a multiple regression model fails to capture the underlying pattern in the outcome variable. An underfitting model has a low R-squared value.
+    In the case of underfitting, a multiple regression model fails to capture the underlying pattern in the outcome variable.
+    An underfitting model has a low R-squared value.
 
-    A model can underfit the data for a variety of reasons. The independent variables in the model might not have a strong relationship with the outcome variable. In this situation, different or additional predictors are      needed. It could be the case that the sample dataset is too small, and this prevents the model from being able to learn the relationship between the predictors and the outcome.
+    A model can underfit the data for a variety of reasons. The independent variables in the model might not have a strong
+    relationship with the outcome variable. In this situation, different or additional predictors are needed. It could be the
+    case that the sample dataset is too small, and this prevents the model from being able to learn the relationship between
+    the predictors and the outcome.
 
     - Overfitting
     
-    Underfitting causes a multiple regression model to perform poorly on the training data, which indicates that the model performance on test data will also be substandard. In contrast, overfitting causes a model to          perform well on training data, but its performance is considerably worse when evaluated using the unseen test data.
+    Underfitting causes a multiple regression model to perform poorly on the training data, which indicates that the model
+    performance on test data will also be substandard. In contrast, overfitting causes a model to perform well on training
+    data, but its performance is considerably worse when evaluated using the unseen test data.
 
 Generally, R-squared will continue to increase with more predictors because the model will become overly specific to the data it was built on even if the predictors do not have a strong relationship with the outcome variable. This is why a high R-squared value is not enough by itself to indicate that the model will perform well and might instead be a sign of overfitting.
 
