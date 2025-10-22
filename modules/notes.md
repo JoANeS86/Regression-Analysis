@@ -147,24 +147,52 @@ R² ranges from 0 to 1. So, if a model has an R² of 0.85, that means that the X
 
 <ins>MAE (mean absolute error)</ins>: Is the average of the absolute difference between the predicted and actual values.
 
-Adjusted R²
+## Module 3: Multiple Regression
+
+Multiple linear regression, also known as multiple regression, is a technique that estimates the linear relationship between one continuous dependent
+variable and two or more independent variables.
+
+One Hot Encoding: A data transformation technique that turns one categorical variable into several binary variables.
+
+Variance Inflation Factors (VIF): Quantifies how correlated each independent variable is with all of the other independent variables.
+
+**Multiple linear regression assumptions**
+
+        Linearity: Each predictor variable (Xi) is linearly related to the outcome variable (Y).
+        Normality: The errors are normally distributed.*
+        Independent Observations: Each observation in the dataset is independent.
+        Homoscedasticity: The variance of the errors is constant or similar across the model.*
+        No multicollinearity: No two independent variables (Xi and Xj) can be highly correlated with each other.
+
+<ins>Adjusted R²</ins>: A variation of the R² regression evaluation metric that penalizes unnecessary explanatory variables.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b1630200-b256-49da-a480-6c5465ca5bf7" />
+</p>
+
+<ins>The two ways a model can be unreliable</ins>
+
+    - Underfitting
+
+    In the case of underfitting, a multiple regression model fails to capture the underlying pattern in the outcome variable. An underfitting model has a low R-squared value.
+
+    A model can underfit the data for a variety of reasons. The independent variables in the model might not have a strong relationship with the outcome variable. In this situation, different or additional predictors are      needed. It could be the case that the sample dataset is too small, and this prevents the model from being able to learn the relationship between the predictors and the outcome.
+
+    - Overfitting
+    
+    Underfitting causes a multiple regression model to perform poorly on the training data, which indicates that the model performance on test data will also be substandard. In contrast, overfitting causes a model to          perform well on training data, but its performance is considerably worse when evaluated using the unseen test data.
+
+Generally, R-squared will continue to increase with more predictors because the model will become overly specific to the data it was built on even if the predictors do not have a strong relationship with the outcome variable. This is why a high R-squared value is not enough by itself to indicate that the model will perform well and might instead be a sign of overfitting.
+
+Along with the R-squared value, a multiple regression model also has an associated adjusted R-squared value. The adjusted R-squared penalizes the addition of more independent variables to the multiple regression model. Additionally, the adjusted R-squared only captures the proportion of variation explained by the independent variables that show a significant relationship with the outcome variable. These differences prevent the adjusted R-squared value from becoming inflated like the R-squared value.
+
+
 
 
 
 
 
 Logistic regression: A technique that models a categorical dependent variable based on one or more independent variables.
-
-
-
-## Module 3: Multiple Regression
-
-Multiple linear regression, also known as multiple regression, is a technique that estimates the linear relationship between one continuous dependent
-variable and two or more independent variables
-
-One Hot Encoding: A data transformation technique that turns one categorical variable into several binary variables.
-
-Variance Inflation Factors (VIF): Quantifies how correlated each independent variable is with all of the other independent variables.
 
 
 
