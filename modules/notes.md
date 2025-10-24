@@ -198,6 +198,37 @@ The bias variance tradeoff balances to model qualities, bias and variance: A hig
 
 There are three common regularization techniques. Lasso regression, ridge regression and elastic net regression.
 
+## Module 4: Advanced hypothesis testing
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fb31b3d9-da7e-4527-8eca-60b74bc6928e" />
+</p>
+
+<ins>X² Goodness of fit test</ins>: Determines whether an observed categorical variable follows an expected distribution.
+
+Here are the main steps you will take:
+
+    1. Identify the Null and Alternative Hypotheses
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/875667d6-a2bd-4429-819e-9150f926f99d" />
+</p>
+        2. Calculate the chi-square test statistic (𝛘2)
+        
+<p align="center">
+<img src="https://github.com/user-attachments/assets/971a5003-a7dd-450e-b272-06ecc4824d14" />
+</p>
+
+The intuition behind this formula is that it should quantify the extent of any discrepancies between observed frequencies and expected frequencies for each categorical level. Squaring these differences does two things. First, it ensures that all discrepancies between observed and expected contribute positively to the chi-squared statistic. Second, it penalizes larger discrepancies. Dividing the sum of the squared differences by the expected frequency of each category level standardizes the differences. In other words, it accounts for the fact that larger discrepancies are more significant when the expected frequencies are small, and less so when the expected frequencies are large.
+        
+        3. Calculate the p-value
+
+A p-value is the probability of getting a chi-squared value as big as (or bigger than) the one you found, if the null hypothesis were true.
+
+        4. Make a conclusion
+
+<ins>X² Test for independence</ins>: Determines whether or not two categorical variables are associated with each other.
+
 
 
 
