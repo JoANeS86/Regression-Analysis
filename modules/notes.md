@@ -213,7 +213,8 @@ Here are the main steps you will take:
 <p align="center">
 <img src="https://github.com/user-attachments/assets/875667d6-a2bd-4429-819e-9150f926f99d" />
 </p>
-        2. Calculate the chi-square test statistic (𝛘2)
+
+    2. Calculate the chi-square test statistic (𝛘2)
         
 <p align="center">
 <img src="https://github.com/user-attachments/assets/971a5003-a7dd-450e-b272-06ecc4824d14" />
@@ -221,16 +222,29 @@ Here are the main steps you will take:
 
 The intuition behind this formula is that it should quantify the extent of any discrepancies between observed frequencies and expected frequencies for each categorical level. Squaring these differences does two things. First, it ensures that all discrepancies between observed and expected contribute positively to the chi-squared statistic. Second, it penalizes larger discrepancies. Dividing the sum of the squared differences by the expected frequency of each category level standardizes the differences. In other words, it accounts for the fact that larger discrepancies are more significant when the expected frequencies are small, and less so when the expected frequencies are large.
         
-        3. Calculate the p-value
+    3. Calculate the p-value
 
 A p-value is the probability of getting a chi-squared value as big as (or bigger than) the one you found, if the null hypothesis were true.
 
-        4. Make a conclusion
+    4. Make a conclusion
 
-<ins>X² Test for independence</ins>: Determines whether or not two categorical variables are associated with each other.
+<ins>X² Test for independence</ins>: Determines whether or not two categorical variables are associated with each other. The null hypothesis (H0) of the test is that two categorical variables are independent. The alternative hypothesis (Ha) is that two categorical variables are not independent.
 
+To calculate the expected values, use the following formula:
 
+<p align="center">
+<img src="https://github.com/user-attachments/assets/5ee6c3ec-ea28-4f89-8236-fa78ca260b2f" />
+</p>
 
+The logic of this calculation, considering the example below, is as follows: if device and membership status are truly independent, then the rate of Mac users who are members should be the same as the rate of Mac users who are guests. The percentage of users who use Macs out of all the users is 1,300 / 3,500 = 0.371 * 100 = 37.1%. Accordingly, 37.1% of members and 37.1% of guests would be expected to use Macs. So, 0.371 * 2,150 members ≈ 799.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/7e1ae2b9-dc13-40e5-96b8-fe04b5f15d91" />
+</p>
+
+Finding the p-value associated with a particular 𝛸2 test statistic is similar to the process outlined already for the goodness of fit test. The only minor difference is how to determine the number of degrees of freedom. For an independence test with two categorical variables with m x n possible levels, there are (m – 1) (n – 1) degrees of freedom, assuming there are no other constraints on the probabilities. So, in the working example, this means there is (2 – 1)(2 – 1) = 1 degree of freedom.
+
+Finally, you need to make a conclusion.
 
 
 Logistic regression: A technique that models a categorical dependent variable based on one or more independent variables.
