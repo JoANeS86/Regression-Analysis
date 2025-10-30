@@ -249,9 +249,56 @@ Finally, you need to make a conclusion.
 
 Logistic regression: A technique that models a categorical dependent variable based on one or more independent variables.
 
+## Module 5: Logistic Regression
+
+<ins>Binomial logistic regression assumptions</ins>
+
+- Linearity: There should be a linear relationship between each X variable and the logit of the probability that Y equals 1.
+
+        Odds = p/1-p
+
+        Logit (log-odds): The logarithm of the odds of a given probability.
+
+                logit(p) = log(p/1-p)
+
+        Logit in terms of X variables.
+
+                logit(p) = log(p/1-p) = B0 + B1X1 + B2X2 + ... + BnXn
+
+In Linear Regression we minimize the sum of squared residuals, which is a measure of error, to figure out the best model. In Logistic Regression, we'll often use maximum likelihood estimation to find the best logistic regression model. Maximum likelihood estimation or MLE, is a technique for estimating the beta parameters that maximize the likelihood of the model producing the observed data (Likelihood: The probability of observing the actual data, given some set of beta parameters).
+
+- Independent observations.
+
+- No multicollinearity between the independent variables.
+
+- No extreme outliers.
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
